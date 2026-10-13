@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Advogados | Advocacia cível, empresarial e trabalhista em São Paulo</title>
+    <meta name="description" content="Guilherme Advogados: orientação jurídica em Direito Civil, Empresarial, Trabalhista, Família e Sucessões, Imobiliário e Consumidor. Atendimento presencial em São Paulo e online.">
+    <meta name="theme-color" content="#0a0f1a">
+
+    <!-- Open Graph (como o link aparece no WhatsApp/redes) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Guilherme Advogados">
+    <meta property="og:description" content="Orientação jurídica com ética, sigilo e atendimento próximo.">
+    <meta property="og:image" content="assets/img/recepcao.webp">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Marca o <html> com .js antes de pintar a tela: só assim escondemos elementos que serão animados -->
+    <script>document.documentElement.classList.add('js');</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Dados estruturados para o Google (SEO local) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Guilherme Advogados",
+        "description": "Advocacia cível, empresarial e trabalhista em São Paulo.",
+        "telephone": "+55-11-99999-9999",
+        "email": "contato@guilhermeadvogados.com.br",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Paulista, 1000 - Conj. 101",
+            "addressLocality": "São Paulo",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Ícones reutilizáveis -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4a.5.5 0 0 0 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.7-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></symbol>
+        <symbol id="i-down" viewBox="0 0 24 24"><path fill="currentColor" d="M11 4h2v12.2l4.3-4.3 1.4 1.4L12 20l-6.7-6.7 1.4-1.4 4.3 4.3z"/></symbol>
+    </svg>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" aria-hidden="true">
+        <div class="preloader__inner">
+            <span class="logo-mark logo-mark--lg">G</span>
+            <span class="preloader__name">Guilherme Advogados</span>
+        </div>
+        <span class="preloader__bar"><span></span></span>
+    </div>
+
+    <!-- ============ EFEITOS GLOBAIS ============ -->
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor" aria-hidden="true"><span class="cursor__label">Ver</span></div>
+    <div class="progress" aria-hidden="true"><span></span></div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#inicio" class="logo" aria-label="Guilherme Advogados, voltar ao início">
+                <span class="logo-mark">G</span>
+                <span class="logo__text">
+                    <strong>Guilherme</strong>
+                    <small>Advogados</small>
+                </span>
+            </a>
+
+            <nav class="nav" aria-label="Menu principal">
+                <ul class="nav__list">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#atuacao">Atuação</a></li>
+                    <li><a href="#escritorio">Escritório</a></li>
+                    <li><a href="#metodo">Método</a></li>
+                    <li><a href="#duvidas">Dúvidas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" data-wa="Olá! Gostaria de agendar um atendimento." class="btn btn--outline btn--sm header__cta" data-magnetic>Agendar atendimento</a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu mobile em tela cheia -->
+    <div class="menu-mobile" id="menu-mobile" aria-hidden="true" inert>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#atuacao">Atuação</a></li>
+            <li><a href="#escritorio">Escritório</a></li>
+            <li><a href="#metodo">Método</a></li>
+            <li><a href="#duvidas">Dúvidas</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <a href="#" data-wa="Olá! Gostaria de agendar um atendimento." class="btn btn--gold">Falar pelo WhatsApp</a>
+    </div>
+
+    <main id="conteudo">
+
+        <!-- ============ HERO ============ -->
+        <!-- data-3d="true" liga a balança 3D; "false" mostra a foto -->
+        <section class="hero" id="inicio" aria-labelledby="hero-title" data-3d="true">
+            <div class="container hero__grid">
+                <div class="hero__content">
+                    <p class="hero__lead hero__anim">Advocacia cível, empresarial e trabalhista em São Paulo</p>
+
+                    <h1 class="hero__title" id="hero-title">
+                        Decisões jurídicas seguras começam com a orientação <em>certa.</em>
+                    </h1>
+
+                    <p class="hero__text hero__anim">
+                        Atuamos de forma estratégica e próxima, para que você entenda cada etapa
+                        e tome decisões com clareza, seja para sua vida pessoal ou para sua empresa.
+                    </p>
+
+                    <div class="hero__actions hero__anim">
+                        <a href="#" data-wa="Olá! Gostaria de falar com um advogado." class="btn btn--gold btn--lg" data-magnetic>
+                            <svg width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg>
+                            Falar com um advogado
+                        </a>
+                        <a href="#atuacao" class="btn-link">
+                            <span class="btn-link__icon"><svg width="16" height="16" aria-hidden="true"><use href="#i-down"/></svg></span>
+                            <span class="btn-link__text">Ver áreas de atuação</span>
+                        </a>
+                    </div>
+
+                    <ul class="hero__badges hero__anim">
+                        <li><strong>15+</strong> anos de atuação</li>
+                        <li><strong>Sigilo</strong> profissional</li>
+                        <li><strong>Presencial</strong> e online</li>
+                    </ul>
+                </div>
+
+                <div class="hero__media">
+                    <!-- Foto: aparece só se o 3D estiver desligado ou o aparelho não suportar WebGL -->
+                    <div class="hero__img-wrap">
+                        <img src="assets/img/recepcao.webp" alt="Recepção do escritório com parede de mármore e balança da justiça iluminada" width="1145" height="1374" loading="lazy">
+                    </div>
+                    <!-- Balança 3D (o canvas é criado pelo js/hero3d.js) -->
+                    <div class="hero__3d" data-cursor="Arraste" aria-hidden="true"></div>
+                </div>
+            </div>
+
+            <a href="#sobre" class="scroll-indicator" aria-label="Rolar para a próxima seção">
+                <span class="scroll-indicator__track"><span class="scroll-indicator__dot"></span></span>
+            </a>
+        </section>
+
+        <!-- ============ MARQUEE ============ -->
+        <div class="marquee" aria-hidden="true">
+            <div class="marquee__track">
+                <!-- O conteúdo aparece 2x para o loop ficar contínuo -->
+                <span>Ética</span><i>§</i><span>Sigilo profissional</span><i>§</i><span>Estratégia</span><i>§</i><span>Transparência</span><i>§</i><span>Atendimento personalizado</span><i>§</i><span>Direito Civil</span><i>§</i><span>Direito Empresarial</span><i>§</i><span>Direito Trabalhista</span><i>§</i>
+                <span>Ética</span><i>§</i><span>Sigilo profissional</span><i>§</i><span>Estratégia</span><i>§</i><span>Transparência</span><i>§</i><span>Atendimento personalizado</span><i>§</i><span>Direito Civil</span><i>§</i><span>Direito Empresarial</span><i>§</i><span>Direito Trabalhista</span><i>§</i>
+            </div>
+        </div>
+
+        <!-- ============ § 1 SOBRE ============ -->
+        <section class="section about" id="sobre" aria-labelledby="sobre-title">
+            <div class="container about__grid">
+                <div class="about__media" data-tilt="6">
+                    <div class="img-reveal" data-reveal-img>
+                        <img src="assets/img/advogado-documentos.webp" alt="Advogado analisando documentos em sua mesa" width="1145" height="1374" loading="lazy">
+                    </div>
+                    <div class="about__card" data-reveal>
+                        <span class="about__card-num"><span data-count="15">15</span>+</span>
+                        <span>anos de atuação</span>
+                    </div>
+                </div>
+
+                <div class="about__content">
+                    <p class="kicker" data-reveal><span class="kicker__sect">§ 1</span>Sobre o escritório</p>
+                    <h2 class="title" id="sobre-title" data-split>
+                        Técnica para orientar. <em>Proximidade</em> para acompanhar.
+                    </h2>
+                    <div class="about__text" data-reveal>
+                        <p>
+                            O Guilherme Advogados nasceu com um propósito claro: oferecer uma advocacia
+                            técnica, ética e acessível, em que cada cliente é ouvido com atenção e entende
+                            exatamente o que está acontecendo no seu caso.
+                        </p>
+                        <p>
+                            Unimos conhecimento jurídico sólido a uma comunicação simples e transparente,
+                            acompanhando pessoas e empresas desde a prevenção de conflitos até a atuação
+                            em todas as instâncias.
+                        </p>
+                    </div>
+
+                    <ul class="about__stats" data-reveal>
+                        <li><strong><span data-count="6">6</span></strong><span>áreas de atuação</span></li>
+                        <li><strong><span data-count="24">24</span>h</strong><span>para retorno do primeiro contato</span></li>
+                        <li><strong>SP</strong><span>atendimento presencial, e online para todo o Brasil</span></li>
+                    </ul>
+
+                    <div class="signature" data-reveal>
+                        <span class="signature__name">Dr. Guilherme</span>
+                        <span class="signature__role">Sócio fundador, OAB/SP 000.000 <!-- TODO: número real da OAB --></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ § 2 COMPROMISSOS ============ -->
+        <section class="section pillars" aria-labelledby="pilares-title">
+            <div class="container">
+                <div class="section-head">
+                    <p class="kicker" data-reveal><span class="kicker__sect">§ 2</span>Nossos compromissos</p>
+                    <h2 class="title" id="pilares-title" data-split>Três princípios em <em>cada</em> caso.</h2>
+                </div>
+
+                <div class="pillars__grid">
+                    <article class="pillar" data-reveal="3d">
+                        <h3>Sigilo absoluto</h3>
+                        <p>Tudo o que você compartilha é tratado com total confidencialidade, do primeiro contato ao encerramento do caso.</p>
+                    </article>
+                    <article class="pillar" data-reveal="3d">
+                        <h3>Clareza em cada etapa</h3>
+                        <p>Explicamos riscos, caminhos possíveis e prazos em linguagem simples, sem juridiquês.</p>
+                    </article>
+                    <article class="pillar" data-reveal="3d">
+                        <h3>Atendimento próximo</h3>
+                        <p>Você sabe com quem está falando e recebe atualizações frequentes sobre o andamento do seu caso.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ § 3 ÁREAS DE ATUAÇÃO ============ -->
+        <section class="section areas" id="atuacao" aria-labelledby="atuacao-title">
+            <div class="container">
+                <div class="section-head section-head--split">
+                    <div>
+                        <p class="kicker" data-reveal><span class="kicker__sect">§ 3</span>Áreas de atuação</p>
+                        <h2 class="title" id="atuacao-title" data-split>Soluções jurídicas para <em>pessoas</em> e empresas.</h2>
+                    </div>
+                    <p class="areas__hint">Deslize para ver as 6 áreas</p>
+                </div>
+
+                <!-- Cada card mostra a lei que rege a área -->
+                <div class="areas__grid">
+                    <a href="#" data-wa="Olá! Preciso de orientação em Direito Civil." class="area-card" data-cursor="Ver" data-reveal="3d" data-tilt>
+                        <span class="area-card__law">Código Civil, Lei 10.406/2002</span>
+                        <h3>Direito Civil</h3>
+                        <p>Contratos, indenizações, responsabilidade civil e cobranças.</p>
+                        <span class="area-card__link">Conversar no WhatsApp</span>
+                    </a>
+                    <a href="#" data-wa="Olá! Preciso de orientação em Direito Empresarial." class="area-card" data-cursor="Ver" data-reveal="3d" data-tilt>
+                        <span class="area-card__law">Código Civil, arts. 966 a 1.195</span>
+                        <h3>Direito Empresarial</h3>
+                        <p>Constituição de empresas, contratos societários e assessoria preventiva.</p>
+                        <span class="area-card__link">Conversar no WhatsApp</span>
+                    </a>
+                    <a href="#" data-wa="Olá! Preciso de orientação em Direito Trabalhista." class="area-card" data-cursor="Ver" data-reveal="3d" data-tilt>
+                        <span class="area-card__law">CLT, Decreto-Lei 5.452/1943</span>
+                        <h3>Direito Trabalhista</h3>
+                        <p>Orientação a empregados e empregadores, rescisões e acordos.</p>
+                        <span class="area-card__link">Conversar no WhatsApp</span>
+                    </a>
+                    <a href="#" data-wa="Olá! Preciso de orientação em Família e Sucessões." class="area-card" data-cursor="Ver" data-reveal="3d" data-tilt>
+                        <span class="area-card__law">Código Civil, arts. 1.511 a 2.027</span>
+                        <h3>Família e Sucessões</h3>
+                        <p>Divórcio, guarda, pensão alimentícia, inventário e planejamento sucessório.</p>
+                        <span class="area-card__link">Conversar no WhatsApp</span>
+                    </a>
+                    <a href="#" data-wa="Olá! Preciso de orientação em Direito Imobiliário." class="area-card" data-cursor="Ver" data-reveal="3d" data-tilt>
+                        <span class="area-card__law">Lei do Inquilinato, Lei 8.245/1991</span>
+                        <h3>Direito Imobiliário</h3>
+                        <p>Compra e venda, locação, usucapião e regularização de imóveis.</p>
+                        <span class="area-card__link">Conversar no WhatsApp</span>
+                    </a>
+                    <a href="#" data-wa="Olá! Preciso de orientação em Direito do Consumidor." class="area-card" data-cursor="Ver" data-reveal="3d" data-tilt>
+                        <span class="area-card__law">CDC, Lei 8.078/1990</span>
+                        <h3>Direito do Consumidor</h3>
+                        <p>Cobranças indevidas, problemas com produtos, serviços e bancos.</p>
+                        <span class="area-card__link">Conversar no WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ § 4 O ESCRITÓRIO (galeria horizontal) ============ -->
+        <section class="space" id="escritorio" aria-labelledby="escritorio-title">
+            <div class="space__pin">
+                <div class="space__track">
+                    <div class="space__intro">
+                        <p class="kicker"><span class="kicker__sect">§ 4</span>O escritório</p>
+                        <h2 class="title" id="escritorio-title">Um ambiente pensado para você se sentir <em>seguro.</em></h2>
+                        <p>Estrutura moderna, salas reservadas para reuniões e atendimento online para quem precisa de praticidade.</p>
+                    </div>
+                    <figure class="space__item space__item--wide">
+                        <img src="assets/img/hero-advogado.webp" alt="Advogada em sua sala de atendimento" width="1408" height="768" loading="lazy">
+                        <figcaption>Salas de atendimento</figcaption>
+                    </figure>
+                    <figure class="space__item">
+                        <img src="assets/img/recepcao.webp" alt="Recepção do escritório com balcão de mármore" width="1145" height="1374" loading="lazy">
+                        <figcaption>Recepção</figcaption>
+                    </figure>
+                    <figure class="space__item space__item--wide">
+                        <img src="assets/img/sala-escritorio.webp" alt="Salas de reunião envidraçadas" width="1408" height="768" loading="lazy">
+                        <figcaption>Salas de reunião</figcaption>
+                    </figure>
+                    <figure class="space__item">
+                        <img src="assets/img/aperto-de-maos.webp" alt="Reunião com clientes" width="1408" height="768" loading="lazy">
+                        <figcaption>Reuniões com clientes</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CITAÇÃO ============ -->
+        <section class="quote" aria-label="Manifesto do escritório">
+            <div class="quote__bg" data-parallax>
+                <img src="assets/img/reuniao.webp" alt="" width="1373" height="1146" loading="lazy">
+            </div>
+            <div class="container quote__inner">
+                <span class="quote__mark" aria-hidden="true">“</span>
+                <blockquote>
+                    <p class="quote__text" data-split-words>
+                        Advocacia não é apenas conhecer a lei. É ouvir com atenção, explicar com clareza e caminhar ao lado do cliente em cada decisão.
+                    </p>
+                    <footer>Dr. Guilherme, sócio fundador</footer>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- ============ § 5 GUIA PRÁTICO (seção couro) ============ -->
+        <section class="section guide" aria-labelledby="guia-title">
+            <div class="container guide__grid">
+                <div class="guide__head">
+                    <p class="kicker" data-reveal><span class="kicker__sect">§ 5</span>Guia prático</p>
+                    <h2 class="title" id="guia-title" data-split>Recebeu uma notificação ou citação? <em>Mantenha a calma.</em></h2>
+                    <p data-reveal>Siga estes passos para proteger seus direitos desde o primeiro momento.</p>
+                    <a href="#" data-wa="Olá! Recebi uma notificação/citação e preciso de orientação." class="btn btn--gold" data-reveal data-magnetic>
+                        <svg width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg>
+                        Pedir orientação agora
+                    </a>
+                </div>
+                <ol class="guide__steps">
+                    <li data-reveal>
+                        <span>1</span>
+                        <div><h3>Não ignore os prazos</h3><p>Documentos judiciais têm prazos curtos. Anote a data em que recebeu.</p></div>
+                    </li>
+                    <li data-reveal>
+                        <span>2</span>
+                        <div><h3>Não assine nada sem orientação</h3><p>Acordos e declarações podem ter efeitos que você não imagina.</p></div>
+                    </li>
+                    <li data-reveal>
+                        <span>3</span>
+                        <div><h3>Reúna os documentos</h3><p>Contratos, comprovantes, conversas e e-mails ajudam a entender o caso.</p></div>
+                    </li>
+                    <li data-reveal>
+                        <span>4</span>
+                        <div><h3>Procure um advogado</h3><p>Uma análise rápida evita erros e mostra os caminhos possíveis.</p></div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ § 6 MÉTODO (linha do tempo) ============ -->
+        <section class="section method" id="metodo" aria-labelledby="metodo-title">
+            <div class="container method__grid">
+                <div class="method__head">
+                    <p class="kicker" data-reveal><span class="kicker__sect">§ 6</span>Como trabalhamos</p>
+                    <h2 class="title" id="metodo-title" data-split>Um método claro, do primeiro contato à <em>solução.</em></h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__line"><span class="timeline__fill"></span></div>
+                    <article class="timeline__step">
+                        <span class="timeline__dot"></span>
+                        <span class="timeline__num">Etapa 1</span>
+                        <h3>Primeiro contato</h3>
+                        <p>Você conta sua situação pelo WhatsApp, telefone ou presencialmente. Retornamos em até 24h úteis.</p>
+                    </article>
+                    <article class="timeline__step">
+                        <span class="timeline__dot"></span>
+                        <span class="timeline__num">Etapa 2</span>
+                        <h3>Análise do caso</h3>
+                        <p>Estudamos documentos e fatos com cuidado para entender riscos e possibilidades.</p>
+                    </article>
+                    <article class="timeline__step">
+                        <span class="timeline__dot"></span>
+                        <span class="timeline__num">Etapa 3</span>
+                        <h3>Estratégia</h3>
+                        <p>Apresentamos os caminhos possíveis, de forma transparente, para você decidir com segurança.</p>
+                    </article>
+                    <article class="timeline__step">
+                        <span class="timeline__dot"></span>
+                        <span class="timeline__num">Etapa 4</span>
+                        <h3>Atuação e acompanhamento</h3>
+                        <p>Conduzimos o caso e mantemos você informado sobre cada movimentação.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ § 7 FAQ ============ -->
+        <section class="section faq" id="duvidas" aria-labelledby="faq-title">
+            <div class="container faq__grid">
+                <div>
+                    <p class="kicker" data-reveal><span class="kicker__sect">§ 7</span>Dúvidas frequentes</p>
+                    <h2 class="title" id="faq-title" data-split>Perguntas que <em>sempre</em> recebemos.</h2>
+                    <p data-reveal>Não encontrou sua dúvida? <a href="#contato" class="link">Fale com a gente.</a></p>
+                </div>
+
+                <div class="faq__list" data-reveal>
+                    <details class="faq__item">
+                        <summary>Como funciona o primeiro atendimento?</summary>
+                        <div class="faq__content"><p>Você entra em contato, conta brevemente sua situação e agendamos uma reunião presencial ou online para entender o caso em detalhes.</p></div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Vocês atendem online?</summary>
+                        <div class="faq__content"><p>Sim. Atendemos clientes de todo o Brasil por videochamada, com a mesma atenção e sigilo do atendimento presencial.</p></div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Quais documentos devo levar?</summary>
+                        <div class="faq__content"><p>Documento de identidade e tudo o que estiver relacionado ao caso: contratos, notificações, comprovantes, prints de conversas e e-mails.</p></div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Como são definidos os honorários?</summary>
+                        <div class="faq__content"><p>Os honorários seguem a tabela da OAB e consideram a complexidade de cada caso. Tudo é apresentado de forma clara e por escrito antes de iniciarmos.</p></div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Minhas informações ficam em sigilo?</summary>
+                        <div class="faq__content"><p>Sim. O sigilo profissional é um dever do advogado previsto no Código de Ética da OAB, e seus dados são tratados conforme a LGPD.</p></div>
+                    </details>
+                    <details class="faq__item">
+                        <summary>Em quanto tempo recebo retorno?</summary>
+                        <div class="faq__content"><p>Respondemos o primeiro contato em até 24 horas úteis. Durante o caso, você recebe atualizações sempre que houver movimentação.</p></div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ § 8 CONTATO ============ -->
+        <section class="section contact" id="contato" aria-labelledby="contato-title">
+            <div class="contact__bg">
+                <img src="assets/img/aperto-de-maos.webp" alt="" width="1408" height="768" loading="lazy">
+            </div>
+            <div class="container contact__grid">
+                <div class="contact__info">
+                    <p class="kicker" data-reveal><span class="kicker__sect">§ 8</span>Contato</p>
+                    <h2 class="title" id="contato-title" data-split>Vamos conversar sobre o <em>seu caso?</em></h2>
+                    <p class="status" data-reveal><span class="status__dot"></span> Atendimento de segunda a sexta, das 9h às 18h</p>
+
+                    <ul class="contact__list" data-reveal>
+                        <li>
+                            <span>WhatsApp e telefone</span>
+                            <a href="tel:+5511999999999" class="link-sweep">(11) 99999-9999</a> <!-- TODO: número real -->
+                        </li>
+                        <li>
+                            <span>E-mail</span>
+                            <a href="mailto:contato@guilhermeadvogados.com.br" class="link-sweep">contato@guilhermeadvogados.com.br</a>
+                        </li>
+                        <li>
+                            <span>Endereço</span>
+                            <a href="https://maps.google.com/?q=Av.+Paulista,+1000,+São+Paulo" target="_blank" rel="noopener" class="link-sweep">Av. Paulista, 1000, Conj. 101<br>São Paulo, SP</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="form" id="form-contato" data-reveal novalidate>
+                    <h3>Envie sua mensagem</h3>
+                    <p class="form__sub">Ao enviar, o WhatsApp abre com sua mensagem pronta.</p>
+
+                    <div class="field">
+                        <input type="text" id="f-nome" name="nome" placeholder=" " required autocomplete="name">
+                        <label for="f-nome">Seu nome</label>
+                    </div>
+                    <div class="field">
+                        <input type="tel" id="f-tel" name="telefone" placeholder=" " required autocomplete="tel">
+                        <label for="f-tel">Telefone com DDD</label>
+                    </div>
+                    <div class="field">
+                        <select id="f-assunto" name="assunto" required>
+                            <option value="" disabled selected hidden></option>
+                            <option>Direito Civil</option>
+                            <option>Direito Empresarial</option>
+                            <option>Direito Trabalhista</option>
+                            <option>Família e Sucessões</option>
+                            <option>Direito Imobiliário</option>
+                            <option>Direito do Consumidor</option>
+                            <option>Outro assunto</option>
+                        </select>
+                        <label for="f-assunto">Assunto</label>
+                    </div>
+                    <div class="field">
+                        <textarea id="f-msg" name="mensagem" rows="3" placeholder=" "></textarea>
+                        <label for="f-msg">Mensagem (opcional)</label>
+                    </div>
+                    <label class="check">
+                        <input type="checkbox" id="f-lgpd" required>
+                        <span>Concordo com a <a href="politica-de-privacidade.html" class="link">Política de Privacidade</a> e autorizo o contato.</span>
+                    </label>
+                    <p class="form__error" role="alert" hidden></p>
+                    <button type="submit" class="btn btn--gold btn--full btn--lg" data-magnetic>
+                        <svg width="18" height="18" aria-hidden="true"><use href="#i-wa"/></svg>
+                        Enviar pelo WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a href="#inicio" class="logo logo--footer" aria-label="Guilherme Advogados">
+                    <span class="logo-mark logo-mark--lg">G</span>
+                    <span class="logo__text"><strong>Guilherme</strong><small>Advogados</small></span>
+                </a>
+                <p class="footer__claim">Ética, sigilo e estratégia<br>em cada decisão.</p>
+            </div>
+
+            <div class="footer__cols">
+                <div>
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#sobre" class="link-sweep">Sobre</a></li>
+                        <li><a href="#atuacao" class="link-sweep">Atuação</a></li>
+                        <li><a href="#metodo" class="link-sweep">Método</a></li>
+                        <li><a href="#duvidas" class="link-sweep">Dúvidas</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Áreas</h4>
+                    <ul>
+                        <li>Direito Civil</li>
+                        <li>Direito Empresarial</li>
+                        <li>Direito Trabalhista</li>
+                        <li>Família e Sucessões</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="tel:+5511999999999" class="link-sweep">(11) 99999-9999</a></li>
+                        <li><a href="mailto:contato@guilhermeadvogados.com.br" class="link-sweep">contato@guilhermeadvogados.com.br</a></li>
+                        <li>Av. Paulista, 1000, São Paulo, SP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Redes</h4>
+                    <ul>
+                        <li><a href="#" target="_blank" rel="noopener" class="link-sweep">Instagram</a></li>
+                        <li><a href="#" target="_blank" rel="noopener" class="link-sweep">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© <span id="ano">2026</span> Guilherme Advogados. Inscrição OAB/SP 000.000 <!-- TODO: registro real --></p>
+                <ul>
+                    <li><a href="politica-de-privacidade.html" class="link-sweep">Política de Privacidade</a></li>
+                    <li><button type="button" class="link-btn" data-open-cookies>Preferências de cookies</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__giant" aria-hidden="true">Guilherme</div>
+    </footer>
+
+    <!-- ============ FLUTUANTES ============ -->
+    <a href="#" data-wa="Olá! Gostaria de falar com um advogado." class="wa-float" aria-label="Conversar pelo WhatsApp">
+        <svg width="26" height="26" aria-hidden="true"><use href="#i-wa"/></svg>
+    </a>
+
+    <div class="mobile-bar">
+        <a href="#" data-wa="Olá! Gostaria de falar com um advogado.">WhatsApp</a>
+        <a href="tel:+5511999999999">Ligar agora</a>
+    </div>
+
+    <div class="cookies" role="dialog" aria-label="Aviso de cookies" hidden>
+        <p>Usamos cookies para melhorar sua experiência, conforme a LGPD. Saiba mais na <a href="politica-de-privacidade.html" class="link">Política de Privacidade</a>.</p>
+        <div>
+            <button type="button" class="btn btn--ghost btn--sm" data-cookies="recusar">Recusar</button>
+            <button type="button" class="btn btn--gold btn--sm" data-cookies="aceitar">Aceitar</button>
+        </div>
+    </div>
+
+    <script src="assets/vendor/lenis.min.js" defer></script>
+    <script src="assets/vendor/gsap.min.js" defer></script>
+    <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+    <script src="assets/vendor/SplitText.min.js" defer></script>
+    <script src="assets/vendor/three.custom.min.js" defer></script>
+    <script src="js/hero3d.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
